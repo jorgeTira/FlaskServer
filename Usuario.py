@@ -3,7 +3,7 @@ import hashlib
 class Usuario:
     def __init__(self, conexion, cursor):
         self.conexion = conexion
-        self.cursor = cursor
+        self.cursor = cursor              
 
     def crear (self, usuario, contra, tipo):
         insertar = ("INSERT INTO usuario(correo, password,tipo)\
